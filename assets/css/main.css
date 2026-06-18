@@ -80,7 +80,8 @@
 
 :root {
   --tp-theme-color: #000000;
-  --tp-secoundery-color: #D9D813;
+  --tp-secoundery-color: #FFC107;
+  /* --tp-secoundery-color: #D9D813; */
   --tp-orange-color: #E6641C;
   --tp-body-color: #404038;
   --tp-white-color: #FFFFFF;
@@ -5047,7 +5048,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
 @media (max-width: 574.98px),
 only screen and (min-width: 576px) and (max-width: 767.98px) {
   .tp-header-logo img {
-    max-width: 120px;
+    max-width: 190px;
   }
 }
 
@@ -5741,7 +5742,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
   font-size: 100px;
   font-weight: 600;
   letter-spacing: -0.03em;
-  line-height: 100px;
+  line-height: 120px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
@@ -5762,7 +5763,7 @@ only screen and (min-width: 768px) and (max-width: 991.98px) {
 (max-width: 574.98px) {
   .tp-hero-banner-title {
     font-size: 75px;
-    text-align: start;
+    text-align: center;
     line-height: 1;
     padding-top: 20px;
     margin-bottom: 10px;

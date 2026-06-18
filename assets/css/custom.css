@@ -11,3 +11,31 @@
  .banner-text-padding {
    padding: 0 30px;
  }
+
+ .close-icon {
+   width: 15px;
+   height: 15px;
+ }
+
+ .text-gold-gradient {
+   background: linear-gradient(135deg,
+       #B8860B 0%,
+       #FFD700 100%);
+
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+
+   display: inline-block;
+ }
+
+ .tp-hero-banner-title.tp-char-animation>div>div {
+   background: linear-gradient(135deg,
+       #B8860B 0%,
+       #FFD700 100%);
+
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+ }
