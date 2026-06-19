@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="assets/css/spacing.css">
 	<link rel="stylesheet" href="assets/css/odometer-min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.8/css/modal-video.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.1/css/lightgallery-bundle.min.css">
+
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/custom.css">
 </head>
@@ -1812,6 +1814,39 @@
 						</div>
 					</div>
 				</section>
+
+
+				<section class="pb-100">
+					<div class="container-fluid">
+						<div class="container d-flex justify-content-center align-items-center  flex-column">
+							<span class=" tp-section-sub-title mb-15 tp_fade_anim" data-duration=".9"
+								style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+								Gallery
+							</span>
+							<h2 class="text-center mx-auto text-gold-gradient lh-base font-playfair">
+								Discover
+								the Beauty of Yagna Eshwari</h2>
+							<h5 class="text-center lh-base mb-5">Experience the essence of Yagna Eshwari Farmland through captivating
+								images
+								showcasing spiritual spaces,
+								pristine
+								nature, organic farmlands, wellness experiences, and the vision of a thriving conscious community.</h5>
+						</div>
+						<div id="lightgallery" class="swiper yagna-gallery">
+							<div class="swiper-wrapper">
+								<a href="assets/img/about/about-1.png" class="swiper-slide">
+									<img src="assets/img/about/about-1.png" alt="">
+								</a>
+								<a href="assets/img/about/about-2.png" class="swiper-slide">
+									<img src="assets/img/about/about-2.png" alt="">
+								</a>
+								<a href="assets/img/about/about-3.png" class="swiper-slide">
+									<img src="assets/img/about/about-3.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
 				<div class="tp-footer-area tp-linear-bg-6 tp-footer-spacing-3 tp-footer-margin br-20  tp-bg fix"
 					data-background="assets/img/footer/footer-bg-3.jpg"
 					style="background-image: url(&quot;assets/img/footer/footer-bg-3.jpg&quot;);">
@@ -1833,7 +1868,6 @@
 						<div class="d-flex align-items-center text-center mt-0 pt-0 justify-content-between">
 							<h2 class="d-block font-playfair  text-white">May
 								every soul find peace, purpose, and prosperity within these sacred grounds. 🙏</h2>
-
 						</div>
 					</div>
 
@@ -1927,6 +1961,8 @@
 	<!-- script,start -->
 	<script src="assets/js/jquery-3.7.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.1/lightgallery.min.js"></script>
+
 	<script src="assets/js/vandor/waypoints.js"></script>
 	<script src="assets/js/ajex-form.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1947,6 +1983,7 @@
 	<script src="assets/js/main.js"></script>
 	<script>
 		$(document).ready(function () {
+			lightGallery(document.getElementById('lightgallery'));
 			$(".js-modal-btn").modalVideo({
 				channel: 'vimeo', vimeo: {
 					autoplay: true,
@@ -1966,6 +2003,42 @@
 					player.setMuted(false);
 				}
 			}, 500);
+		});
+		new Swiper(".yagna-gallery", {
+			loop: true,
+			speed: 1000,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 15
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				},
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 30
+				}
+			}
+		});
+
+		lightGallery(document.getElementById('lightgallery'), {
+			selector: '.swiper-slide',
+			download: false,
+			counter: true,
+			thumbnail: true,
+			zoom: true
 		});
 	</script>
 	<!-- script,end -->
