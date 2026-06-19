@@ -5747,7 +5747,8 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .tp-hero-banner-title {
-    font-size: 135px;
+    font-size: 110px;
+    line-height: 135px;
   }
 }
 
@@ -10393,7 +10394,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px),
 
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .tpserv__card {
-    padding: 55px 40px;
+    padding: 10px;
   }
 }
 
