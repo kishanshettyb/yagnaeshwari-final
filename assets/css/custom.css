@@ -158,3 +158,26 @@
    transform: translate(-50%, -50%) scale(1.05);
    transition: 0.3s ease;
  }
+
+
+ .legal .tpserv__card {
+   padding: 20px;
+   height: auto;
+   justify-content: start;
+ }
+
+ .legal .tpserv__card ul li {
+   padding: 10px 0;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ }
+
+ .tpserv__card ul li:last-child {
+   border-bottom: none;
+ }
+
+
+ @media (min-width: 768px) {
+   .legal .tpserv__card {
+     height: 550px;
+   }
+ }
