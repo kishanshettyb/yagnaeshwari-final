@@ -11358,7 +11358,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
 .tpteam__content span {
   display: inline-block;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 @media (max-width: 574.98px) {
@@ -11368,9 +11368,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
 }
 
 .tpteam__icon {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  /* background: rgba(255,tpteam__content */
   display: inline-block;
   width: 60px;
   height: 60px;

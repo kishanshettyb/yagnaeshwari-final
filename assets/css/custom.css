@@ -39,3 +39,47 @@
    background-clip: text;
    color: transparent;
  }
+
+ .text-blue-gradient {
+   background: linear-gradient(135deg,
+       #1E3A8A 0%,
+       #3B82F6 100%);
+
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+
+   display: inline-block;
+ }
+
+ .light-line {
+   border: 0;
+   height: 1px;
+   background: rgba(0, 34, 255, 0.591);
+   margin: 20px 0;
+
+
+ }
+
+ /* Hide title on all slides */
+ .tp-team-active .swiper-slide .title {
+   opacity: 1;
+   visibility: visible;
+ }
+
+ .tp-team-active .swiper-slide .title h5 {
+   font-size: 1rem;
+ }
+
+ .tp-team-active .swiper-slide .title p {
+   font-size: 0.8rem !important;
+   line-height: normal !important;
+ }
+
+ /* Show title on active slide */
+ .tp-team-active .swiper-slide.swiper-slide-active .title {
+
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.4s ease;
+ }
