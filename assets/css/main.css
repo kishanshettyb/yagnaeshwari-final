@@ -10369,8 +10369,8 @@ only screen and (min-width: 576px) and (max-width: 767.98px),
 }
 
 .tpserv__card {
-  padding: 55px 60px;
-  min-height: 430px;
+  padding: 8px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10381,6 +10381,15 @@ only screen and (min-width: 576px) and (max-width: 767.98px),
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
+.tpserv__card img {
+  border-radius: 15px;
+}
+
+.tpserv__card h3 {
+  padding: 20px 0 10px 0;
+}
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .tpserv__card {
