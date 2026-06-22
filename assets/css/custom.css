@@ -189,3 +189,31 @@
    background-clip: text;
    color: transparent;
  }
+
+ .yagna-gallery .swiper-slide {
+   width: auto;
+   height: auto;
+ }
+
+ .yagna-gallery img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .yagna-gallery .swiper-pagination {
+   position: relative;
+   margin-top: 20px;
+ }
+
+ .yagna-gallery .swiper-pagination-bullet {
+   width: 10px;
+   height: 10px;
+ }
+
+ .yagna-gallery .swiper-pagination-bullet-active {
+   background: #d4af37;
+   /* gold */
+ }
