@@ -213,6 +213,7 @@
 		loop: true,
 		speed: 2000,
 		centeredSlides: true,
+		slidesPerView: "auto",
 		autoplay: {
 			delay: 1000,
 			disableOnInteraction: false
@@ -238,7 +239,7 @@
 				spaceBetween: 30
 			},
 			1200: {
-				slidesPerView: 3,
+				slidesPerView: 4,
 				spaceBetween: 40
 			}
 		}
