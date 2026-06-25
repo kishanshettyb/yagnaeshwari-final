@@ -217,3 +217,28 @@
    background: #d4af37;
    /* gold */
  }
+
+ .whatsapp-float {
+   position: fixed;
+   right: 30px;
+   bottom: 50px;
+   z-index: 99999999999;
+
+ }
+
+ .whatsapp-float img {
+   width: 40px;
+   height: 40px;
+ }
+
+ .whatsapp-float img {
+   width: 40px;
+   height: 40px;
+ }
+
+ @media (min-width: 768px) {
+   .whatsapp-float img {
+     width: 60px;
+     height: 60px;
+   }
+ }
