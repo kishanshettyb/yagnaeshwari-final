@@ -1205,6 +1205,9 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
 
 .tp-offcanvas-gallery a img {
   border-radius: 5px;
+  width: auto;
+  height: 80px;
+  object-fit: cover;
 }
 
 .header-sidebar-btn {
